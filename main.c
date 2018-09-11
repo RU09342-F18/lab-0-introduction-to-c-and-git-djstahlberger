@@ -21,6 +21,9 @@
  * ^ Bitwise XOR (num1 ^ num2)
  * ~ Bitwise Inverse (~num1)
  *
+ *
+ *  The calculator takes two integers and a character as inputs. The two integers are the numbers to
+ *  be manipulated and the character is to determine which operation is to be performed.
  */
 
 #include math.h
@@ -37,7 +40,7 @@
      case '/':
          return num1 / num2; //returns num1 / num2 if a '/' is entered
      case '%':
-         return num1 % num2; //returns num1 % num2 if a '%' is entered
+         return num1 % num2; //returns the modulus of num1 and num2, which is the remainder of the division, if a '%' is entered
      case '<':
          return num1 << num2;//returns num1 shifted left by num2 if a '<' is entered
      case '>':
